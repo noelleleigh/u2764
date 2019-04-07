@@ -379,6 +379,7 @@ footer>nav:Last-Child { Margin-Bottom: Calc(-2.7EM - 3PX) }
 *:Root footer>nav>*>li { Display: Contents }
 *:Root footer>nav>*>li>a[href] {
 	Justify-Self: Center;
+	Position: Relative;
 	Top: 0;
 	Margin: 0;
 	Transition: Top Ease-In-Out .25S;
@@ -442,7 +443,6 @@ footer>ol>li:Target small.RETURN>a[href]:First-Child,
 *:Root footer>nav>*>li>a[href],
 footer>a[href]:Last-Child {
 	Display: Block;
-	Position: Relative;
 	Border: 1PX Solid;
 	Padding: .07EM .5CH;
 	Height: 1.35EM;
@@ -464,9 +464,6 @@ footer>a[href]:Last-Child::AFTER {
 }
 footer>ol>li:Target small.RETURN>a[href]:First-Child,
 footer>a[href]:Last-Child {
-	Position: Absolute;
-	Bottom: -1.35EM;
-	Right: 0;
 	Margin: Calc(-1PX - .07EM) Calc(-1PX - .5CH);
 	Text-Align: Right;
 	Transition: Right Ease-In-Out .25S;
@@ -477,6 +474,11 @@ footer>ol>li:Target small.RETURN>a[href]:First-Child {
 	Top: Calc(-1IN - 1PX - .07EM);
 	Right: Calc(-1PX - .5CH);
 	Bottom: Auto;
+}
+footer>a[href]:Last-Child {
+	Position: Absolute;
+	Bottom: -1.35EM;
+	Right: 0;
 }
 *:Root:Root footer>a[href="#"]:Last-Child {
 	Right: Auto;
