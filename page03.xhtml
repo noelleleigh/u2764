@@ -789,7 +789,6 @@ These scripts provide scrolling support to ensure that the current section will 
 				/*
 				On `resize` events, we just simulate a scroll and let the `article` code handle it.
 				*/
-				console.log("resized")
 				Array.prototype.forEach.call(
 					document.body.getElementsByTagName( "article" )
 					, ( eachArticle )  =>  eachArticle.dispatchEvent( new Event( "scroll" ) )
