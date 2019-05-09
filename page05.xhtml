@@ -9,7 +9,6 @@
 This is yet another manifesto style. Iʼve done my best to keep the styling minimal to emphasize a community, low­‑class æsthetic. It doesnʼt take much, yʼall.
 */
 html {
-	Min-Width: 100VW; /* Mobile fix ; mobile browsers will otherwise awkwardly shrink the width of the `html` element smaller than the viewport in an attempt to show out­‑of­‑bounds content */
 	Overflow-X: Hidden;
 	Color: #FAF8F7;
 	Background: #B01C1C;
@@ -25,6 +24,7 @@ body {
 	Margin: 5EM Auto;
 	Border: Thick #1F1A14 Outset;
 	Padding: 1EM;
+	Width: 100VW; /* Mobile fix ( overriden by `max-width` on large screens ) ; mobile browsers will otherwise awkwardly shrink the width of this element smaller than the viewport in an attempt to show out­‑of­‑bounds content */
 	Max-Width: 51EM;
 	Color: #B01C1C;
 	Background: #FAF8F7;
