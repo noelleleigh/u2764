@@ -9,7 +9,7 @@
 This is yet another manifesto style. Iʼve done my best to keep the styling minimal to emphasize a community, low­‑class æsthetic. It doesnʼt take much, yʼall.
 */
 html {
-	Overflow-X: Hidden;
+	Overflow: Auto;
 	Color: #FAF8F7;
 	Background: #B01C1C;
 	Font: Bold Large / 1.5 Serif;
@@ -20,11 +20,16 @@ html *::SELECTION {
 	Outline: Thin #1F1A14 Solid;
 }
 body {
+	Margin: 0;
+	Padding: 0;
+	Overflow-X: Hidden;
+}
+article {
+	Display: Flex-Root;
 	Box-Sizing: Border-Box;
 	Margin: 5EM Auto;
 	Border: Thick #1F1A14 Outset;
 	Padding: 1EM;
-	Width: 100VW; /* Mobile fix ( overriden by `max-width` on large screens ) ; mobile browsers will otherwise awkwardly shrink the width of this element smaller than the viewport in an attempt to show out­‑of­‑bounds content */
 	Max-Width: 51EM;
 	Color: #B01C1C;
 	Background: #FAF8F7;
