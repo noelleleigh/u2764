@@ -258,10 +258,12 @@ header.SHORTTITLE { Display: None } /* Fallback */
 	header.SHORTTITLE::AFTER {
 		Display: Block;
 		Position: Absolute;
+		Box-Sizing: Border-Box;
 		Top: 0;
 		Bottom: 0;
-		Right: 0;
+		Left: 0;
 		Border-Right: Solid;
+		Width: 2REM;
 		Z-Index: -1;
 		Content: "";
 	}
