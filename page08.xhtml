@@ -271,7 +271,12 @@ ul.PARAGRAPH>li { Margin:.5EM 0 }
 /* Page Layout */
 html {
 	Color: #FAF8F7;
-	Background: Fixed Linear-Gradient(
+	Background: Linear-Gradient(
+		/* This is to accommodate a Firefox bug with fixed linear-gradients and blend-modes */
+		To Bottom,
+		Transparent,
+		Transparent
+	), Fixed Linear-Gradient(
 		To Bottom,
 		#948D877F,
 		#948D877F
@@ -288,7 +293,7 @@ html {
 		Transparent 1PX,
 		Transparent 2PX
 	), #4B2DF7;
-	Background-Blend-Mode: Multiply, Screen, Multiply;
+	Background-Blend-Mode: Normal, Multiply, Screen, Multiply;
 	Font-Family: Serif;
 }
 body {
